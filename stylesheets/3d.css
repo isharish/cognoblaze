@@ -20,7 +20,7 @@
     /* height: 100vh; */
     /* background-color: #102b70; */
     /* background: transparent; */
-    background-image: url("/pictures/hero1.png");
+    background-image: url("./pictures/hero1.png");
     /* background-image: linear-gradient(145deg, #0b7289,#102b70); */
     /* background-color: #1b1023; */
     background-repeat: no-repeat;
@@ -117,31 +117,31 @@
     background-position: center center;
 }
 #c1{
-    background-image: url('/pictures/debug.jpg');
+    background-image: url('./pictures/debug.jpg');
 }
 #c2{
-    background-image: url('/pictures/p1.jpg');
+    background-image: url('./pictures/p1.jpg');
 }
 #c3{
-    background-image: url('/pictures/web.jpg');
+    background-image: url('./pictures/web.jpg');
 }
 #c4{
-    background-image: url('/pictures/jack.jpg');
+    background-image: url('./pictures/jack.jpg');
 }
 #c5{
-    background-image: url('/pictures/blanky.jpg');
+    background-image: url('./pictures/blanky.jpg');
 }
 #c6{
-    background-image: url('/pictures/creaters.jpg');
+    background-image: url('./pictures/creaters.jpg');
 }
 #c7{
-    background-image: url('/pictures/replica.jpg');
+    background-image: url('./pictures/replica.jpg');
 }
 #c8{
-    background-image: url('/pictures/intelluct.jpg');
+    background-image: url('./pictures/intelluct.jpg');
 }
 #c9{
-    background-image: url('/pictures/memorydump.jpg');
+    background-image: url('./pictures/memorydump.jpg');
 }
 
 

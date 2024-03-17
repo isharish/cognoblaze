@@ -1,0 +1,27 @@
+.hero {
+    width: 100%;
+    height: 700px;
+}
+
+@media(max-width:430px) {
+    .hero {
+        width: 100%;
+        height: 200px;
+    }
+    #myVideo {
+        object-fit: fill;
+        height: 200px;
+        width: 100%;
+        /* min-height: 0; */
+    }
+}
+
+#myVideo {
+    object-fit: fill;
+    position: static;
+    /* right: 0;
+    bottom: 0; */
+    height: 800px;
+    /* min-width: 100%;
+    min-height: 100%; */
+}

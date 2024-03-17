@@ -1,0 +1,658 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Harish,Sathiyan and other contributers">
+    <meta name="generator" content="Hugo 0.101.0">
+
+    <meta property="og:title" content="Cognoblaze'23"/>
+    <meta property="og:image" content="https://dg08k1ljsj5r8.cloudfront.net/Logo2020white2.png"/>
+    <meta property="og:description" content="A one day National level symposium"/>
+    <meta property="og:url" content="cognoblage.info"/>
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/offcanvas-navbar/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Cognoblaze 2K23</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Merriweather+Sans:wght@300&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/dist/intranet/favicon.ico">
+
+    <script src="https://kit.fontawesome.com/04ae2d9897.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="class.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="pictures/logo.png" rel="website icon" type="png" />
+
+    <link href="stylesheets/nav.css" rel="stylesheet" />
+    <link href="stylesheets/hero.css" rel="stylesheet" />
+    <link href="stylesheets/counter.css" rel="stylesheet" />
+    <link href="stylesheets/about.css" rel="stylesheet" />
+    <link href="stylesheets/footer.css" rel="stylesheet" />
+    <link href="stylesheets/3d.css" rel="stylesheet" />
+    <!-- <link href="stylesheets/loader.css" rel="stylesheet" /> -->
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" /> -->
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar" id="nav">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+            <span class="fas fa-stream material-icons"></span>
+        </button>
+
+        <a class="navbar-title" href="#"><img class="logo" src="./pictures/logo.png">Cogno<span class="b">b</span>laze'23</a>
+
+        <nav class="navbar-menu">
+            <div class="menubar">
+                <a href="#"  class="navbar-item" onclick="toggleMenuOpen()">
+                    <span class="icon fa fa-home"></span>
+                    <div class="nav-link" id="link1">Home</div>
+                </a>
+                <a href="#about"  class="navbar-item" onclick="toggleMenuOpen()">
+                    <span class="icon fa fa-info-circle"></span>
+                    <div class="nav-link" id="link2">About</div>
+                </a>
+                <a href="#event"  class="navbar-item" onclick="toggleMenuOpen()">
+                    <span class="icon fa fa-calendar-o"></span>
+                    <div class="nav-link" id="link3">Events</div>
+                </a>
+                <a href="#contact"  class="navbar-item" onclick="toggleMenuOpen()">
+                    <span class="icon fa fa-phone"></span>
+                    <div class="nav-link" id="link4">Contact</div>
+                </a>
+            </div>
+
+        </nav>
+    </nav>
+
+    <div>
+        <video autoplay muted loop id="myVideo" class="hero">
+        <source id="hero" class="sat" src="/pictures/ls4.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+
+    <div class="countdown">
+        <div class="quotes">
+            Are you ready for the&nbsp<span class="code">Code&nbsp</span>Carnival!
+        </div>
+        <div class="cont">
+            <h3 class="lines">A NATIONAL LEVEL  TECHNICAL SYMPOSIUM</h3>
+        </div>
+        <div class="d-descs">APRIL 26 2K23</div>
+        <div class="count">
+            <div class="fl1">
+                <div class="d">
+                    <div class="d-count" id="days">00</div>
+                    <div class="d-desc">Days</div>
+                </div>
+                <!-- <div class="colon">:</div> -->
+                <div class="d">
+                    <div class="d-count" id="hrs">00</div>
+                    <div class="d-desc">Hours</div>
+                </div>
+            </div>
+            <div class="fl1">
+                <!-- <div class="colon">:</div> -->
+                <div class="d">
+                    <div class="d-count" id="minut">00</div>
+                    <div class="d-desc">Minutes</div>
+                </div>
+                <!-- <div class="colon">:</div> -->
+                <div class="d">
+                    <div class="d-count" id="secs">00</div>
+                    <div class="d-desc">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="but">
+        <a class="register" href="https://forms.gle/1XtpptmSNSY45kAu9" target="_blank">Register now!</a>
+    </div>
+
+    
+    <div class="img-container">
+        <img class="new1" src="/pictures/new11.png">
+    <div class="about" id="about">
+        <div class="about-card">
+            <div class="about-desc"><div class="desc-1">Cognoblaze'23</div> <div class="desc-2">Cognoblaze is a national level technical symposium that aims to provide opportunity to each and everyone,to improve their expertise and adroitness in various subjects. Taking part in the technical events encourage innovative and critical thinking as well as non technical event, improve creative thinking by thinking outside the box. Conclusively, these events promote the development of various skills with relevance to our presence of mind, presentation skills and fostering our talents to a great extent.</div></div>
+            <div class="about-pic"><img class="pic" src="/pictures/Logo2020white2.png"></div>
+        </div>
+    </div>
+    <img class="new2" src="/pictures/new22.png">
+    </div>
+
+
+    <div class="event" id="event">
+        <div class="wrapper1 container-fluid">
+        <div class="heads">Technical Events</div>
+        <div class="gyro row row-cols-3 g-4">
+            <div class="col">
+                <div class="card1">
+                    <input type="checkbox" id="card1" class="more1">
+                    <div class="content1">
+                        <div class="front1" id="c1">
+                            <div class="inner1">
+                                <h2>EXPO CLASH</h2>
+                                <label for="card1" class="button1">
+                          Details
+                      </label>
+                            </div>
+                        </div>
+                        <div class="back1">
+                            <div class="inner1">
+                                <div class="info1">
+                                    <h4>EXPO CLASH</h4>
+                                </div>
+                                <!-- <div class="info1">
+
+                                </div> -->
+                                <!-- <div class="info1">
+                                    <span>3</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="description1">
+                                    <p>Expo clash is a paper presentation event where a team of two or three will come up with a recent technical topic ( In the domains like : Artificial intelligence , Cloud computing, Augmented reality, Computer security, Machine learning, Data Science etc.) and deliver it in detail using PowerPoint presentation.</p>
+                                    <p>PowerPoint Presentations will be collected in prior. Those PPTs which qualify will be presented on the day of the event.
+                                    </p>
+                                </div>
+
+                                <label for="card1" class="button1 return">
+                          <i class="fas fa-arrow-left"></i>
+                      </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card1">
+                    <input type="checkbox" id="card2" class="more1">
+                    <div class="content1">
+                        <div class="front1" id="c2">
+                            <!-- <img class="img-fluid" src="pictures/debug.jpg" style="width: 100%;height:auto;object-fit:cover"/> -->
+                            <div class="inner1">
+                                <h2>SWACHH CODE</h2>
+                                <label for="card2" class="button1">
+                          Details
+                      </label>
+                            </div>
+                        </div>
+                        <div class="back1">
+                            <div class="inner1">
+                                <div class="info1">
+                                    <h4>SWACHH CODE</h4>
+                                </div>
+                                <!-- <div class="info1">
+
+                                </div>
+                                <div class="info1">
+                                    <span>3</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="description1">
+                                    <p>Swachh code is a bug clearance and execution of the program to get the desirable output  while the code snippet with infused bugs will be given.</p>
+                                    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis tenetur nemo amet temporibus, enim soluta
+                                        nam, debitis.
+                                    </p> -->
+                                </div>
+
+                                <label for="card2" class="button1 return">
+                          <i class="fas fa-arrow-left"></i>
+                      </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card1">
+                    <input type="checkbox" id="card3" class="more1">
+                    <div class="content1">
+                        <div class="front1" id="c3">
+                            <div class="inner1">
+                                <h2>SUPERFICIO</h2>
+                                <label for="card3" class="button1">
+                          Details
+                      </label>
+                            </div>
+                        </div>
+                        <div class="back1">
+                            <div class="inner1">
+                                <div class="info1">
+                                    <h4>SUPERFICIO</h4>
+                                </div>
+                                <!-- <div class="info1">
+
+                                </div>
+                                <div class="info1">
+                                    <span>3</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="description1">
+                                    <p>Superficio is a frontend development event where  html/css code for the given design must be written to replicate the design.</p>
+                                    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis tenetur nemo amet temporibus, enim soluta
+                                        nam, debitis.
+                                    </p> -->
+                                </div>
+
+                                <label for="card3" class="button1 return">
+                          <i class="fas fa-arrow-left"></i>
+                      </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card1">
+                    <input type="checkbox" id="card4" class="more1">
+                    <div class="content1">
+                        <div class="front1" id="c4">
+                            <div class="inner1">
+                                <h2>JACK OF ALL TRADES</h2>
+                                <label for="card4" class="button1">
+                          Details
+                      </label>
+                            </div>
+                        </div>
+                        <div class="back1">
+                            <div class="inner1">
+                                <div class="info1">
+                                    <h4>JACK OF ALL TRADES</h4>
+                                </div>
+                                <!-- <div class="info1">
+
+                                </div>
+                                <div class="info1">
+                                    <span>3</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="description1">
+                                    <p>Jack of all trades is an all in one event which includes MCQs of all core subjects of Computer science.</p>
+                                    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis tenetur nemo amet temporibus, enim soluta
+                                        nam, debitis.
+                                    </p> -->
+                                </div>
+
+                                <label for="card4" class="button1 return">
+                          <i class="fas fa-arrow-left"></i>
+                      </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card1">
+                    <input type="checkbox" id="card5" class="more1">
+                    <div class="content1">
+                        <div class="front1" id="c5">
+                            <div class="inner1">
+                                <h2>BLANKY BLANK</h2>
+                                <label for="card5" class="button1">
+                          Details
+                      </label>
+                            </div>
+                        </div>
+                        <div class="back1">
+                            <div class="inner1">
+                                <div class="info1">
+                                    <h4>BLANKY BLANK</h4>
+                                </div>
+                                <!-- <div class="info1">
+
+                                </div>
+                                <div class="info1">
+                                    <span>3</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="description1">
+                                    <p>Blanky blank is a word game where the team of three  is supposed to find a word for which there will be 3 clues which will be revealed in auction basis i.e, the team who bids the maximum value of currency will get to know the clue. The team which finds the maximum words using less currency will be the winner.</p>
+                                    <p>( Individuals can register for this event . You will be joined with the teams on the day of the event.
+                                        If you have formed a team already, register it individually for now and team mates can join together on the day of the event.)                                       
+                                    </p>
+                                </div>
+
+                                <label for="card5" class="button1 return">
+                          <i class="fas fa-arrow-left"></i>
+                      </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="event">
+        <div class="wrapper1 container-fluid">
+        <div class="heads">Non-Technical Events</div>
+        <div class="gyros row row-cols-3 g-4">
+            <div class="col">
+                <div class="card1">
+                    <input type="checkbox" id="card6" class="more1">
+                    <div class="content1">
+                        <div class="front1" id="c6">
+                            <div class="inner1">
+                                <h2>CREATOR'S CORNER</h2>
+                                <label for="card6" class="button1">
+                          Details
+                      </label>
+                            </div>
+                        </div>
+                        <div class="back1">
+                            <div class="inner1">
+                                <div class="info1">
+                                    <h4>CREATOR'S CORNER</h4>
+                                </div>
+                                <!-- <div class="info1">
+
+                                </div> -->
+                                <!-- <div class="info1">
+                                    <span>3</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="description1">
+                                    <p>Creator's corner is an event of logo creation for the given description  using pencil and paper or any known tools.</p>
+                                    <!-- <p>PowerPoint Presentations will be collected in prior. Those PPTs which qualify will be presented on the day of the event.
+                                    </p> -->
+                                </div>
+
+                                <label for="card6" class="button1 return">
+                          <i class="fas fa-arrow-left"></i>
+                      </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card1">
+                    <input type="checkbox" id="card7" class="more1">
+                    <div class="content1">
+                        <div class="front1" id="c7">
+                            <div class="inner1">
+                                <h2>REPLICOLOGY</h2>
+                                <label for="card7" class="button1">
+                          Details
+                      </label>
+                            </div>
+                        </div>
+                        <div class="back1">
+                            <div class="inner1">
+                                <div class="info1">
+                                    <h4>REPLICOLOGY</h4>
+                                </div>
+                                <!-- <div class="info1">
+
+                                </div>
+                                <div class="info1">
+                                    <span>3</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="description1">
+                                    <p>Replicology is an event of working in MS Word where an image of a book page  will be shown and it has to be replicated in the word file.</p>
+                                    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis tenetur nemo amet temporibus, enim soluta
+                                        nam, debitis.
+                                    </p> -->
+                                </div>
+
+                                <label for="card7" class="button1 return">
+                          <i class="fas fa-arrow-left"></i>
+                      </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card1">
+                    <input type="checkbox" id="card8" class="more1">
+                    <div class="content1">
+                        <div class="front1" id="c8">
+                            <div class="inner1">
+                                <h2>THE INTELLECT</h2>
+                                <label for="card8" class="button1">
+                          Details
+                      </label>
+                            </div>
+                        </div>
+                        <div class="back1">
+                            <div class="inner1">
+                                <div class="info1">
+                                    <h4>THE INTELLECT</h4>
+                                </div>
+                                <!-- <div class="info1">
+
+                                </div>
+                                <div class="info1">
+                                    <span>3</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="description1">
+                                    <p>The Intellect is an event with all General knowledge MCQs.</p>
+                                    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis tenetur nemo amet temporibus, enim soluta
+                                        nam, debitis.
+                                    </p> -->
+                                </div>
+
+                                <label for="card8" class="button1 return">
+                          <i class="fas fa-arrow-left"></i>
+                      </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card1">
+                    <input type="checkbox" id="card9" class="more1">
+                    <div class="content1">
+                        <div class="front1" id="c9">
+                            <div class="inner1">
+                                <h2>MEMORY DUMP</h2>
+                                <label for="card9" class="button1">
+                          Details
+                      </label>
+                            </div>
+                        </div>
+                        <div class="back1">
+                            <div class="inner1">
+                                <div class="info1">
+                                    <h4>MEMORY DUMP</h4>
+                                </div>
+                                <!-- <div class="info1">
+
+                                </div>
+                                <div class="info1">
+                                    <span>3</span>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                        <span>people</span>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="description1">
+                                    <p>Memory dump is a memory game which solely depends on remembering the numericals.</p>
+                                    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis tenetur nemo amet temporibus, enim soluta
+                                        nam, debitis.
+                                    </p> -->
+                                </div>
+
+                                <label for="card9" class="button1 return">
+                          <i class="fas fa-arrow-left"></i>
+                      </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="organizers">
+                <div class="heading">Organizers</div>
+                <div class="st">
+                    <b>Staff Coordinator:</b><br>
+                    Dr.C.Uma Rani<br><br>
+                    <b>Student Coordinators:</b><br>
+                    R.Manikandan (Secretary)<br>
+                    N.Sree lakshmi (Joint-Secretary)
+                </div>
+            </div>
+            <div class="organizers">
+                <div class="heading">Contact Us</div>
+                <div class="st1">
+                    <span class="fa fa-envelope-o icons"></span>
+                    <a class="email" href="mailto:cognoblaze2k23@gmail.com">cognoblaze2k23@gmail.com</a>
+                </div>
+
+                <div class="st2">
+                    <span class="fa fa-phone icons"></span>
+                    <div class="phone">
+                        <div class="name">R.Manikandan:</div>
+                        <a class="call c" href="tel:9585638587">9585638587</a>
+                        <div class="name">M.Rohith:</div>
+                        <a class="call c" href="tel:6379526585">6379526585</a>
+                    </div>
+                </div>
+
+                <div class="st2">
+                    <span class="fas fa-map-marker-alt icons"></span>
+                    <div class="phone">
+                        <a class="call" href="https://www.google.com/maps/place/Alagappa+Chettiar+Government+College+of+Engineering+%26+Technology./@10.090038,78.7925233,17z/data=!4m5!3m4!1s0x3b0067a028f8a8f9:0x9c2484c6df0fb26!8m2!3d10.090038!4d78.794712">Alagappa Chettiar Government
+                            College of Engineering and
+                            Technology,
+                            Karaikudi-630003.
+                            Sivagangai, Tamilnadu</a>
+                    </div>
+                </div>
+
+                <div class="st2">
+                    <span class="fab fa-instagram icons"></span>
+                    <div class="phone">
+                        <a class="call" href="https://www.instagram.com/cognoblaze/?igshid=YmMyMTA2M2Y%3D">Cognoblaze</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- <div class="loader">
+        <div class="pl1">
+            <div class="pl1__a">a</div>
+            <div class="pl1__b"></div>
+            <div class="pl1__c"></div>
+        </div>
+    </div> -->
+
+
+    <!-- <svg class="pl" id="loader" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+                <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+                <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+            </linearGradient>
+            <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+                <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+            </linearGradient>
+        </defs>
+        <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36" stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round" transform="rotate(-90,100,100)" />
+        <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36" stroke-dasharray="1 165" stroke-linecap="round" />
+    </svg> -->
+
+
+
+    <script src="js/hero.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/countdown.js"></script>
+    <!-- <script src="js/loader.js"></script> -->
+    <script src="js/active.js"></script>
+
+</body>
+
+</html>

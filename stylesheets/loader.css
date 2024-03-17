@@ -1,0 +1,173 @@
+/* * {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --bg: #e3e4e8;
+    --fg: #17181c;
+    --c1: #f42f25;
+    --c2: #f49725;
+    --c3: #255ff4;
+    --c4: #9725f4;
+    font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    display: flex;
+    flex-wrap: wrap;
+    font: 1em/1.5 sans-serif;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+  }
+  
+  .pl1{
+    justify-content: space-around;
+  }
+  .pl1__a, .pl1__b, .pl1__c, .pl2__a, .pl2__b, .pl2__c {
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    transform-origin: 50% 100%;
+  }
+  
+  .pl1__a, .pl1__b, .pl1__c {
+    animation: bounce1 1s linear infinite;
+  }
+  
+  
+  
+  .pl1{
+    display: flex;
+    margin: 1.5em;
+    width: 6em;
+    height: 6em;
+  }
+  .pl1__a {
+    background: var(--c1);
+  }
+  .pl1__b{
+    background: var(--c2);
+    animation-delay: 0.1s;
+  }
+  .pl1__c{
+    background: var(--c3);
+    animation-delay: 0.2s;
+  }
+  
+
+  @keyframes bounce1 {
+    from, to {
+      transform: translateY(0) scale(1, 1);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: translateY(5em) scale(1, 1);
+      animation-timing-function: linear;
+    }
+    50% {
+      transform: translateY(5em) scale(1.5, 0.5);
+      animation-timing-function: linear;
+    }
+    55% {
+      transform: translateY(5em) scale(1, 1);
+      animation-timing-function: ease-out;
+    }
+  }
+  
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17181c;
+      --fg: #e3e4e8;
+    }
+  } */
+
+
+
+  /* * {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+} */
+:root {
+	--hue: 223;
+	--bg: hsl(var(--hue),10%,90%);
+	--fg: hsl(var(--hue),10%,10%);
+	/* font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320)); */
+}
+/* body {
+	background: var(--bg);
+	color: var(--fg);
+	font: 1em/1.5 sans-serif;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+} */
+
+.pl {
+	display: block;
+	width: 6.25em;
+	height: 6.25em;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 300px;
+    left: 730px;
+}
+.pl__ring, .pl__ball {
+	animation: ring 2s ease-out infinite;
+}
+.pl__ball {
+	animation-name: ball;
+}
+
+/* Dark theme  */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
+	}
+}
+
+/* Animation */
+@keyframes ring {
+	from {
+		stroke-dasharray: 0 257 0 0 1 0 0 258;
+	}
+	25% {
+		stroke-dasharray: 0 0 0 0 257 0 258 0;
+	}
+	50%, to {
+		stroke-dasharray: 0 0 0 0 0 515 0 0;
+	}
+}
+@keyframes ball {
+	from, 50% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: 1;
+	}
+	64% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -109;
+	}
+	78% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -145;
+	}
+	92% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -157;
+	}
+	57%, 71%, 85%, 99%, to {
+		animation-timing-function: ease-out;
+		stroke-dashoffset: -163;
+	}
+}
